@@ -66,7 +66,7 @@ export default {
    methods: {
       //при обнавление страницы пользователя переносит на главную
       onload(){
-         window.onload = (() => {window.location.href="http://localhost:8080/#/"})
+          window.onload = (() => {window.location.hash = "#/"})
       },
    }
 }
