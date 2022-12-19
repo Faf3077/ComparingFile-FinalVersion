@@ -76,7 +76,7 @@ export default {
       },
       //при обнавление страницы пользователя переносит на главную
       onload() {
-         window.onload = (() => { window.location.href = "http://localhost:8080/#/" })
+          window.onload = (() => {window.location.hash = "#/"})
       },
       result() {
          this.$store.state.file.forEach((dataFirst) => {
